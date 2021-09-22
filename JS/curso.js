@@ -54,10 +54,53 @@ finally{
 }
 
 //Arrays
-let vector = [1,2,3];
+let vector = [2,3,5,7,11,13,17,19,23,29,31,37];
 let guarreria = [1,2,'asdfasdf', function(){console.log('PFFF');}, true];
 let matriz = [
   [1,2,3],
   [4,5,6],
   [7,8,9]
 ];
+
+
+console.log(matriz[1][2]);
+
+//Recorrer un Array
+console.log('Recorrer array 1');
+for(let i=0;i<vector.length;i++)
+  console.log(vector[i]);
+
+console.log('Recorrer array 2');
+for(let elemento of vector) //Recorre un vector
+  console.log(elemento);
+
+console.log('Recorrer atributos de objeto');
+for(let atributo in objeto) //Recorre los atributos de un objeto (el nombre del atributo, NO el valor)
+  console.log(atributo);
+
+console.log('Recorrer valores de atributos de objeto');
+for(let atributo in objeto)
+  console.log(objeto[atributo]);
+
+console.log('Recorrer objeto con atributo y valor');
+for(let atributo in objeto)
+  console.log('El atributo ' + atributo + ' vale ' + objeto[atributo]);
+
+console.log('Recorrer objeto con atributo y valor, y comillas escapadas');
+for(let atributo in objeto)
+  console.log(`El atributo '${atributo}' vale ${objeto[atributo]}`); //Con "`" (acento abierto) sirve para escapar las comillas
+
+console.log('Mostrar texto con comillas escapadas');
+console.log('\'Hola Mundo\''); //Escapas las comillas con "\" para que se muestren las comillas en el resultado final
+
+
+let matriz2 = [
+  [1,2,3],
+  [4,5,14,78],
+  [7,8]
+]
+
+console.log('VISUALIZAR MATRIZ 2');
+for (let fila of matriz2)
+  for (let  elemento of fila)
+    console.log(elemento);
