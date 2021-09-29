@@ -126,3 +126,7 @@ console.log(coches);
 //////////////////////////////////// SYMBOL ////////////////////////////////////
 
 console.log('///////////////// SYMBOL /////////////////');
+let sym1 = Symbol();
+let sym2 = Symbol();
+console.log(sym1===sym2); //False
+//Sirve de identificador de un obejeto
